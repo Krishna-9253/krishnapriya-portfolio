@@ -38,7 +38,7 @@ const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.container}>
-        <div className={styles.logo}>Krishnapriya B</div>
+        <div className={styles.logo}>Krishnapriya</div>
         <div className={`${styles.menu} ${menuOpen ? styles.open : ''}`}>
           {sections.map((section) => (
             <button
