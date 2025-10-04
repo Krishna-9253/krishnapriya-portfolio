@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Krishna-9253/krishnapriya-portfolio/static/css/main.4609f7e4.css",
+    "main.js": "/Krishna-9253/krishnapriya-portfolio/static/js/main.53a33614.js",
+    "static/js/453.7a8a6684.chunk.js": "/Krishna-9253/krishnapriya-portfolio/static/js/453.7a8a6684.chunk.js",
+    "static/media/profile.jpg": "/Krishna-9253/krishnapriya-portfolio/static/media/profile.8acc39aba1957546a0c8.jpg",
+    "index.html": "/Krishna-9253/krishnapriya-portfolio/index.html",
+    "main.4609f7e4.css.map": "/Krishna-9253/krishnapriya-portfolio/static/css/main.4609f7e4.css.map",
+    "main.53a33614.js.map": "/Krishna-9253/krishnapriya-portfolio/static/js/main.53a33614.js.map",
+    "453.7a8a6684.chunk.js.map": "/Krishna-9253/krishnapriya-portfolio/static/js/453.7a8a6684.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4609f7e4.css",
+    "static/js/main.53a33614.js"
+  ]
+}
