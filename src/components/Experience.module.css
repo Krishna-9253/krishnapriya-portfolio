@@ -1,0 +1,53 @@
+.experience {
+  padding: 80px 20px;
+  background-color: #f0f4f8;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #182848;
+}
+
+.expCard {
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  margin: 20px auto;
+  max-width: 650px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.expCard:hover, .eduCard:hover, .certCard:hover, .leadCard:hover {
+  transform: translateY(-10px) rotateZ(-1deg);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+h3 {
+  color: #4b6cb7;
+  margin-bottom: 5px;
+}
+
+h4 {
+  color: #182848;
+  margin-bottom: 5px;
+  font-weight: normal;
+}
+
+.duration {
+  font-size: 0.9rem;
+  color: #6b6b6b;
+  display: block;
+  margin-bottom: 10px;
+}
+
+ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 5px;
+  line-height: 1.5;
+}

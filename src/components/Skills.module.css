@@ -1,0 +1,104 @@
+.skills {
+  position: relative; /* Needed for particles */
+  padding: 80px 20px;
+  background: linear-gradient(to right, #f0f4f8, #cfd9e0);
+  overflow: hidden;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #182848;
+}
+
+.skillList {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  z-index: 2; /* Keep skill cards above particles */
+}
+
+.skillCard {
+  background: white;
+  border-radius: 15px;
+  padding: 15px 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skillCard:hover {
+  transform: translateY(-5px) rotateZ(-1deg);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+}
+
+.skillName {
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: block;
+  color: #4b6cb7;
+}
+
+.bar {
+  background: #e2e8f0;
+  border-radius: 25px;
+  height: 12px;
+  overflow: hidden;
+}
+
+.progress {
+  background: linear-gradient(90deg, #4b6cb7, #6b8bff);
+  height: 100%;
+  border-radius: 25px;
+  transition: width 1.5s ease-in-out;
+}
+
+/* --- Floating Particles --- */
+.particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* ignore clicks */
+  overflow: hidden;
+  z-index: 1;
+}
+
+.particle {
+  position: absolute;
+  width: 12px;   /* increased from 8px */
+  height: 12px;  /* increased from 8px */
+  background: rgba(75, 108, 183, 0.7); /* darker and more visible */
+  border-radius: 50%;
+  animation: float 8s linear infinite;
+  opacity: 0.8; /* more visible */
+}
+
+
+.particle:nth-child(odd) { background: rgba(107, 139, 255, 0.5); width: 6px; height: 6px; }
+.particle:nth-child(even) { background: rgba(75, 108, 183, 0.4); width: 10px; height: 10px; }
+
+@keyframes float {
+  0% {
+    transform: translateY(100%) translateX(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(-120%) translateX(50px); /* move further up */
+    opacity: 0;
+  }
+}
+
+
+/* Randomize particle positions */
+.particle:nth-child(1) { left: 5%; animation-duration: 6s; animation-delay: 0s; }
+.particle:nth-child(2) { left: 15%; animation-duration: 8s; animation-delay: 1s; }
+.particle:nth-child(3) { left: 25%; animation-duration: 7s; animation-delay: 0.5s; }
+.particle:nth-child(4) { left: 35%; animation-duration: 9s; animation-delay: 2s; }
+/* ... add more for all 20 particles */
